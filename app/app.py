@@ -7,6 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ultracures.db'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Ultracure@123@localhost/ultracure'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://uname:pass@host/db'
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 api = Api(app)
