@@ -1,6 +1,7 @@
 from app import app, db, api, CORS
 import patient
 import doctor
+import places
 
 
 if __name__ == '__main__':
